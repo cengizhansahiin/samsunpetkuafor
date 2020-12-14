@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<style>
+.Portfolio {
+    position: relative;
+    margin: 5px;
+    border: 2px black;
+    float: left;
+    width: 180px;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+    animation: winanim 0.5s ;
+-webkit-backface-visibility:visible;
+    backface-visibility:visible;
+    box-shadow:0 3px 5px -1px rgba(0,0,0,.2),0 5px 8px 0 rgba(0,0,0,.14),0 1px 14px 0 rgba(0,0,0,.12)
+}
+
+.Portfolio:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+
+.Portfolio img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px
+}
+
+
+@keyframes winanim {
+    0%{opacity:0;transform:scale3d(.3,.3,.3)}
+    50%{opacity:1}
+    
+}
+</style>
+<br>
+<br>
+<br>
+<br>
+
+<div class="row">
+
+<div class="container">
+<h3 class = "display-4">{{kind}} Fotoğraf Albümümüz</h3>
+<hr>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="showall" role="tabpanel" aria-labelledby="showall-tab">
+{% if form %}
+  {% for dogs in form %}
+      <div class="Portfolio"><a href="{{dogs.photo.url}}"><img class="card-img" src="{{dogs.photo.url}}" alt=""></a><div class="desc"></div></div>
+  {% endfor %}
+
+</div>
+{% else %}
+
+<div class="alert alert-info" role="alert">
+  Üzgünüz! Henüz <strong>{{kind}}</strong> fotoğrafımız bulunmamaktadır.
+</div>
+{% endif %}
+  </div>
+</div>
+</div>
+</div>
+
+
+
+{% endblock body %}

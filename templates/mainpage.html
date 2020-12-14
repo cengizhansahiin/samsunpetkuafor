@@ -1,0 +1,231 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<br>
+<br>
+<br>
+
+<style>
+.jumbotron{
+    background: url("") repeat center center; 
+
+}
+
+</style>
+{% if messages %}
+<br>
+  <div class = "container">
+    {% for message in messages %}
+      <div class="alert alert-warning">{{ message }}</div>
+    {% endfor %}
+  </div>
+{% endif %}
+<div class="jumbotron text-center text-black">
+<img src="https://i.ibb.co/n1wgz2F/Whats-App-Image-2020-12-08-at-6-19-47-PM.jpg">
+<hr style="width:57%;height:2px;border-width:0;color:black;background-color:black">
+  <h3 class="font-italic"><small>Samsun'un ilk ve tek ırka özel kesim hizmeti veren pet kuaförü.</small></h3>
+</div>
+
+
+<section class="pt-5 pb-5">
+  <div class="container">
+    <div class="row">
+        <div class="col-6">
+            <h3 class="mb-3">Tıraş Yaptığımız Irklar</h3>
+        </div>
+        <div class="col-6 text-right">
+            <a class="btn mb-3 mr-1" style = "background-color:#BFC9A1; color:white" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                Geri
+            </a>
+            <a class="btn mb-3 " style = "background-color:#BFC9A1; color:white" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                İleri
+            </a>
+        </div>
+        <div class="col-12">
+            <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+
+                            <div class="col-md-4 mb-3">
+                                <div class="card">
+                                    <img class="img-fluid" alt="280x280" src="/media/MOCCA_2.jpeg">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Pomeranian</h4>
+                                            <p class="card-text">Daha fazla Pomeranian tıraşlarını görmek için <a href = "/photolibrary/photolibrary/Pomeranian">buraya</a> tıklayın.</p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://i.ibb.co/N6k8dZr/Shihtzu.jpg">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Shih Tzu</h4>
+                                            <p class="card-text">Daha fazla Shih Tzu tıraşlarını görmek için <a href = "/photolibrary/photolibrary/Shih Tzu">buraya</a> tıklayın.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://i.ibb.co/SvMK0k3/Terrier.jpg">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Yorkshire Terrier</h4>
+                                            <p class="card-text">Daha fazla Yorkshire Terrier tıraşlarını görmek için <a href = "/photolibrary/photolibrary/Yorkshire Terrier">buraya</a> tıklayın.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>                        
+                    <div class="carousel-item">
+                        <div class="row">
+
+                            <div class="col-md-4 mb-3">
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://i.ibb.co/Vv719hD/TODDY-2.jpg">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Poodle</h4>
+                                        <p class="card-text">Daha fazla Poodle tıraşlarını görmek için <a href = "/photolibrary/photolibrary/Poodle">buraya</a> tıklayın.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://i.ibb.co/JKY9c9r/Maltese-1.jpg">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Maltese Terrier</h4>
+                                        <p class="card-text">Daha fazla Maltese Terrier tıraşlarını görmek için <a href = "/photolibrary/photolibrary/Maltese Terrier">buraya</a> tıklayın.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://i.ibb.co/4gN7Gm3/Minyat-r-JPG.jpg">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Minyatür Schnauzer</h4>
+                                            <p class="card-text">Daha fazla Minyatür Schnauzer tıraşlarını görmek için <a href = "/photolibrary/photolibrary/Minyatür Schnauzer">buraya</a> tıklayın.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<style>
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center
+}
+
+.rating>input {
+    display: none
+}
+
+.rating>label {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    font-size: 2.0vw;
+    color: #FFD600;
+    cursor: pointer
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}
+
+</style>
+<hr style="width:75%">
+<form method = "post" action = "/">
+{% csrf_token %}
+<div class="container mt-5" style = "width:50%">
+    <div class="d-flex justify-content-center row">
+        <div class="col-md-8">
+            <div class="d-flex flex-column comment-section">
+
+                <div class="p-2">
+                <div class = "container">
+                <div class = "row">
+                    <input name = "name" type="name" class="form-control" id="exampleFormControlInput1" placeholder="Adınız" style="width:50%;">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                    </div>
+                </div>
+                </div>
+                    <hr>
+                    <div class="d-flex flex-row align-items-start"><textarea name = "comment" class="form-control ml-1 shadow-none textarea" placeholder="Yorumunuz"></textarea></div>
+                    <div class="mt-2 text-right"><button class="btn"style = "background-color:#BFC9A1;color:white;" type="submit">Yorum Yapın</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+<br>
+<div class = "container">
+<hr>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+{% if comments %}
+
+<div class="card">
+  <div class="card-header">
+    <h5>Yorumlar</h5>
+  </div>
+  <ul>
+  <div class="card-body">
+  
+    {% for comment in comments %}
+    <h5 class="card-title">{{comment.name}}</h5>
+    {% with ''|center:comment.rating as range %}
+    {% for i in range %}
+        <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+    {% endfor %}
+    {% endwith %}
+    <br>
+    <hr>
+    <p class="card-text">{{comment.comment}}</p>
+    <p><small>{{comment.created_date}} tarihinde yayımlandı.</small><p>
+    <hr>
+    {% endfor %}
+
+
+  </div>
+    </ul>  
+</div>
+{% else %}
+<div class = "alert alert-warning">Daha henüz yorum yapılmadı. İlk yapan siz olun :)</div>
+
+{% endif %}
+</div>
+<br>
+<br>
+</div>
+{% endblock body %}
