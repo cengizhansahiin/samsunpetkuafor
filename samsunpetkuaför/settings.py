@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'nrm)z*xed1i!*#f68!we42pfgwug4scjdz60ws6q#jf9b%tuo1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['samsunpetkuafor.com', 'www.samsunpetkuafor.com', '188.166.74.48']
 
 
 # Application definition
@@ -57,7 +57,7 @@ ROOT_URLCONF = 'samsunpetkuaför.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/Users/cengi/OneDrive/Masaüstü/samsunpetkuaför/templates'],
+        'DIRS': [os.path.join(BASE_DIR ,'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'samsunpetkuaför.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+	'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'samsunpetkuafor',
+        'USER': 'cengizhan',
+        'PASSWORD': 'Bageni088',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
@@ -122,7 +126,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT= os.path.join('C:/Users/cengi/OneDrive/Masaüstü/samsunpetkuaför','staticfiles/')
+STATIC_ROOT= os.path.join(BASE_DIR,'static')
 
-MEDIA_ROOT = os.path.join('C:/Users/cengi/OneDrive/Masaüstü/samsunpetkuaför', 'photos')
+MEDIA_ROOT = '/home/cengizhan/samsunpetkuafor/media'
 MEDIA_URL = '/media/'

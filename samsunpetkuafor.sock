@@ -1,0 +1,19 @@
+[0;1;32m●[0m gunicorn.service - gunicorn daemon
+     Loaded: loaded (/etc/systemd/system/gunicorn.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Mon 2020-12-14 19:15:59 UTC; 36s ago
+   Main PID: 31015 (gunicorn)
+      Tasks: 4 (limit: 1137)
+     Memory: 91.8M
+     CGroup: /system.slice/gunicorn.service
+             ├─31015 /home/cengizhan/samsunpetkuafor/venv/bin/python /home/cengizhan/samsunpetkuafor/venv/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/cengizhan/samsunpetkuafor/samsunpetkuaför.sock samsunpetkuaför.wsgi:application
+             ├─31027 /home/cengizhan/samsunpetkuafor/venv/bin/python /home/cengizhan/samsunpetkuafor/venv/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/cengizhan/samsunpetkuafor/samsunpetkuaför.sock samsunpetkuaför.wsgi:application
+             ├─31028 /home/cengizhan/samsunpetkuafor/venv/bin/python /home/cengizhan/samsunpetkuafor/venv/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/cengizhan/samsunpetkuafor/samsunpetkuaför.sock samsunpetkuaför.wsgi:application
+             └─31029 /home/cengizhan/samsunpetkuafor/venv/bin/python /home/cengizhan/samsunpetkuafor/venv/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/cengizhan/samsunpetkuafor/samsunpetkuaför.sock samsunpetkuaför.wsgi:application
+
+Dec 14 19:15:59 samsunpetkuafor systemd[1]: Started gunicorn daemon.
+Dec 14 19:15:59 samsunpetkuafor gunicorn[31015]: [2020-12-14 19:15:59 +0000] [31015] [INFO] Starting gunicorn 20.0.4
+Dec 14 19:15:59 samsunpetkuafor gunicorn[31015]: [2020-12-14 19:15:59 +0000] [31015] [INFO] Listening at: unix:/home/cengizhan/samsunpetkuafor/samsunpetkuaför.sock (31015)
+Dec 14 19:15:59 samsunpetkuafor gunicorn[31015]: [2020-12-14 19:15:59 +0000] [31015] [INFO] Using worker: sync
+Dec 14 19:15:59 samsunpetkuafor gunicorn[31027]: [2020-12-14 19:15:59 +0000] [31027] [INFO] Booting worker with pid: 31027
+Dec 14 19:16:00 samsunpetkuafor gunicorn[31028]: [2020-12-14 19:16:00 +0000] [31028] [INFO] Booting worker with pid: 31028
+Dec 14 19:16:00 samsunpetkuafor gunicorn[31029]: [2020-12-14 19:16:00 +0000] [31029] [INFO] Booting worker with pid: 31029
