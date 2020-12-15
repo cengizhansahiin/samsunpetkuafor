@@ -1,25 +1,26 @@
-
-
 <nav class="navbar navbar-expand-md navbar-dark fixed-top" style ="background-color: #BFC9A1">
   <!-- Brand -->
+    <a class="navbar-brand" href="/"><img src = "/media/2-1.png"></a>
 
-  <!-- Links -->
-  <ul class="navbar-nav mr-auto">
-  <a class="navbar-brand" href="/"><img src = "https://i.ibb.co/m06QXbw/2-1.png"></a>
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-</ul>
-<ul class= "navbar-nav ml-auto">
-    <!-- Dropdown -->
-    <li class="nav-item">
-      <a class="nav-link" href="/location">Konumumuz</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/about">Hakkımızda</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/photolibrary">Fotoğraf Albümümüz</a>
-    </li>
-    <li class="nav-item dropdown">
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/photolibrary">Fotoğraf Albümümüz</a>      
+      </li>
+      <li class="navbar-nav active">
+        <a class="nav-link" href="/location">Konumumuz</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/about">Hakkımızda</a>
+      </li>
+      <li class="nav-item active">
+            <li class="nav-item active dropdown">
       <a class="nav-link dropdown-toggle" href="/contact" id="navbardrop" data-toggle="dropdown">
         Randevu ve Bilgi Almak İçin
       </a>
@@ -30,5 +31,7 @@
         <a class="dropdown-item" href="/contact"><img src = "/media/hiclipart-com-4.png"> Whatsapp: 0 (541) 391 18 08</a>
       </div>
     </li>
-  </ul>
+      </li>
+    </ul>
+  </div>
 </nav>

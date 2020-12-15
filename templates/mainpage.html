@@ -6,11 +6,6 @@
 <br>
 
 <style>
-.jumbotron{
-    background: url("") repeat center center; 
-
-}
-
 </style>
 {% if messages %}
 <br>
@@ -20,111 +15,73 @@
     {% endfor %}
   </div>
 {% endif %}
-<div class="jumbotron text-center text-black">
-<img src="/media/logo.jpg">
-<hr style="width:57%;height:2px;border-width:0;color:black;background-color:black">
+<div class="container text-center">
+<img src="/media/logo.jpg" style = "max-width:600px;width:70%;height:auto">
+<hr style="width:60%;height:2px;border-width:0;color:black;background-color:black">
   <h3 class="font-italic"><small>Samsun'un ilk ve tek ırka özel kesim hizmeti veren pet kuaförü.</small></h3>
 </div>
+<br>
+<br>
+<br>
 
 
-<section class="pt-5 pb-5">
-    <div class="container" style = "witdh:100%;height:auto">
-    <div class="row">
-        <div class="col-6">
-            <h3 class="mb-3">Tıraş Yaptığımız Irklar</h3>
-        </div>
-        <div class="col-12">
-            <div id="carouselExampleIndicators2" class="carousel slide " data-ride="carousel" style = "width:90%;height:600px; ">
-
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-md-4 mb-3">
-                                <div class="card" style = "max-width: 300px">
-                                    <img class="img-fluid" alt="280x280" src="/media/MOCCA_PAGE.jpeg">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Pomeranian</h4>
-                                            <p class="card-text">Daha fazla Pomeranian tıraşlarını görmek için <a href = "/photolibrary/photolibrary/Pomeranian">buraya</a> tıklayın.</p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <div class="card" style = "max-width: 300px">
-                                    <img class="img-fluid" alt="100%x280" src="/media/Shihtzu.jpg">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Shih Tzu</h4>
-                                            <p class="card-text">Daha fazla Shih Tzu tıraşlarını görmek için <a href = "/photolibrary/photolibrary/Shih Tzu">buraya</a> tıklayın.</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <div class="card" style = "max-width: 300px">
-                                    <img class="img-fluid" alt="100%x280" src="/media/Terrier.jpg">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Yorkshire Terrier</h4>
-                                            <p class="card-text">Daha fazla Yorkshire Terrier tıraşlarını görmek için <a href = "/photolibrary/photolibrary/Yorkshire Terrier">buraya</a> tıklayın.</p>
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>                        
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-4 mb-3">
-                                <div class="card" style = "max-width: 300px">
-                                    <img class="img-fluid" alt="100%x280" src="/media/turta(4).jpeg">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Poodle</h4>
-                                        <p class="card-text">Daha fazla Poodle tıraşlarını görmek için <a href = "/photolibrary/photolibrary/Poodle">buraya</a> tıklayın.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <div class="card" style = "max-width: 300px">
-                                    <img class="img-fluid" alt="100%x280" src="/media/Maltese-1.jpg">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Maltese Terrier</h4>
-                                        <p class="card-text">Daha fazla Maltese Terrier tıraşlarını görmek için <a href = "/photolibrary/photolibrary/Maltese Terrier">buraya</a> tıklayın.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <div class="card" style = "max-width: 300px">
-                                    <img class="img-fluid" alt="100%x280" src="/media/Minyat-r-JPG.jpg">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Minyatür Schnauzer</h4>
-                                            <p class="card-text">Daha fazla Minyatür Schnauzer tıraşlarını görmek için <a href = "/photolibrary/photolibrary/Minyatür Schnauzer">buraya</a> tıklayın.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-                    <div class="col-6 text-left">
-                        <a class="btn mb-3 mr-1" style = "background-color:#BFC9A1; color:white" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                            Geri
-                        </a>
-                        <a class="btn mb-3 " style = "background-color:#BFC9A1; color:white" href="#carouselExampleIndicators2" role="button" data-slide="next">
-                            İleri
-                        </a>
-                    </div>
-                </div>
-
+<div class="container">
+    <div class="card-deck">
+        <div class="card mb-4">
+            <img class="card-img-top img-fluid" src="/media/MOCCA_PAGE.jpeg" alt="Pomeranian">
+            <div class="card-body">
+                <h5 class="card-title">Pomeranian</h5>
+                <p class="card-text">Daha fazla Pomeranian fotoğrafı için</p>
+                <a href="/photolibrary/photolibrary/Pomeranian"style ="background-color: #BFC9A1;color:white" class="btn">Fotoğraflar</a>
             </div>
-            
         </div>
-        
+        <div class="card mb-4">
+            <img class="card-img-top img-fluid" src="/media/Shihtzu.jpg" alt="Shih Tzu">
+            <div class="card-body">
+                <h5 class="card-title">Shih Tzu</h5>
+                <p class="card-text">Daha fazla Shih Tzu fotoğrafı için</p>
+                <a href="/photolibrary/photolibrary/Shih Tzu" style ="background-color: #BFC9A1;color:white" class="btn">Fotoğraflar</a>
+            </div>
+        </div>
+        <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+        <div class="card mb-4">
+            <img class="card-img-top img-fluid" src="/media/Terrier.jpg" alt="Yorkshire Terrier">
+            <div class="card-body">
+                <h5 class="card-title">Yorkshire Terrier</h5>
+                <p class="card-text">Daha fazla Yorkshire Terrier fotoğrafı için </p>
+                <a href="/photolibrary/photolibrary/Yorkshire Terrier" style ="background-color: #BFC9A1;color:white"  class="btn">Fotoğraflar</a>
+            </div>
+        </div>
+        <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+        <div class="card mb-4">
+            <img class="card-img-top img-fluid" src="/media/turta(4).jpeg" alt="Poodle">
+            <div class="card-body">
+                <h5 class="card-title">Poodle</h5>
+                <p class="card-text">Daha fazla Poodle fotoğrafı için</p>
+                <a href="/photolibrary/photolibrary/Poodle" style ="background-color: #BFC9A1;color:white" class="btn">Fotoğraflar</a>
+            </div>
+        </div>
+        <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+         <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
+        <div class="card mb-4">
+            <img class="card-img-top img-fluid" src="/media/Maltese-1.jpg" alt="Maltese Terrier">
+            <div class="card-body">
+                <h5 class="card-title">Maltese Terrier</h5>
+                <p class="card-text">Daha fazla Maltese Terrier fotoğrafı için</p>
+                <a href="/photolibrary/photolibrary/Maltese Terrier"  style ="background-color: #BFC9A1;color:white" class="btn">Fotoğraflar</a>
+            </div>
+        </div>
+        <div class="w-100 d-none d-xl-block"><!-- wrap every 5 on xl--></div>
+
+        <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+        <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>  
     </div>
 </div>
-</section>
+<div class = "container">
+<div class="alert alert-warning text-center">
+Önemli Bilgi: Pomeranian ırkı çift katlı tüy yapısına sahip olduğundan dolayı tıraş veya kısaltma işlemleri tüylerine zarar verebilir.
+</div>
+</div>
 <style>
 .rating {
     display: flex;
@@ -177,7 +134,7 @@
                 <div class="p-2">
                 <div class = "container">
                 <div class = "row">
-                    <input name = "name" type="name" class="form-control" id="exampleFormControlInput1" placeholder="Adınız" style="width:50%;">
+                    <input name = "name" type="name" class="form-control" id="exampleFormControlInput1" placeholder="Adınız" style="width:70%;">
                     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
                     </div>
